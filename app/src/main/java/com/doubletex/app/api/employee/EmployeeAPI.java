@@ -14,12 +14,17 @@ public class EmployeeAPI {
     private final EmployeeService employeeService;
 
     @GetMapping("/{id}")
-    public Optional<Employee> get (@PathVariable Long id){
+    public Employee get (@PathVariable Long id){
         return employeeService.get(id) ;
     }
 
     @PostMapping("")
     public void post(@Valid @RequestBody Employee employee){
         employeeService.post(employee);
+    }
+
+    @PutMapping("/{id}/raiseSalary")
+    public Employee raiseSalary(@PathVariable Long id, @RequestParam Double newSalary) {
+        return employeeService.raiseSalary(id, newSalary);
     }
 }
