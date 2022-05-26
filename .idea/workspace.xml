@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16fe3b98-2c0a-4fe4-b66c-420497bbfd01" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/client/src/Pages/EmployeeForm/EmployeeForm.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/client/src/Pages/EmployeeList/EmployeeList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/client/src/Pages/EmployeeList/useEmployeeList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/client/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/client/src/Pages/EmployeeForm/EmployeeForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/client/src/Pages/EmployeeForm/EmployeeForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/client/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/client/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/client/src/Pages/EmployeeForm/EmployeeForm.types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/client/src/Pages/EmployeeForm/EmployeeForm.types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/client/src/Pages/EmployeeForm/useEmployeeForm.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/client/src/Pages/EmployeeForm/useEmployeeForm.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/client/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/client/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/doubletex/app/api/employee/EmployeeAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/doubletex/app/api/employee/EmployeeAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/doubletex/app/api/employee/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/doubletex/app/api/employee/EmployeeService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,6 +133,7 @@
       <workItem from="1649934716149" duration="347000" />
       <workItem from="1649936888017" duration="2991000" />
       <workItem from="1652955892758" duration="3512000" />
+      <workItem from="1653562058776" duration="7480000" />
     </task>
     <servers />
   </component>

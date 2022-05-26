@@ -3,8 +3,12 @@ package com.doubletex.app.api.employee;
 import com.doubletex.app.errors.DbtBadRequest;
 import com.doubletex.app.errors.DbtNotFound;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -15,8 +19,8 @@ public class EmployeeService {
         return employeeRepository.findById(id).orElseThrow(() -> new DbtNotFound(Employee.class, id));
     }
 
-    public void post(Employee employee){
-        employeeRepository.save(employee);
+    public Employee post(Employee employee){
+        return employeeRepository.save(employee);
     }
 
     /*public Employee raiseSalary(Long id, Double newSalary) {
@@ -28,6 +32,10 @@ public class EmployeeService {
         employee.setSalary(newSalary);
         return employeeRepository.save(employee);
     }*/
+
+    public Employee put(Employee employee){
+        return employeeRepository.save(employee);
+    }
 
     public Employee raiseSalary(Long id, Double newSalary) {
         Employee employee = employeeRepository.findById(id).orElseThrow(() -> new DbtNotFound(Employee.class, id));
@@ -42,6 +50,11 @@ public class EmployeeService {
         if(employee.getSalary() > newSalary) {
             dbtBadRequest.addValidation("salary", "New salary should be greater then the old one");
         }
+    }
+
+    public List<Employee> fetchPaginated(Integer pageSize, Integer pageNumber, String sortBy){
+        Pageable pageable=PageRequest.of(pageSize,pageNumber, Sort.by(sortBy));
+        return employeeRepository.findAll(pageable).getContent();
     }
 
 }
