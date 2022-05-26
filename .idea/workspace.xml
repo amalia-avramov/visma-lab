@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16fe3b98-2c0a-4fe4-b66c-420497bbfd01" name="Default Changelist" comment="" />
+    <list default="true" id="16fe3b98-2c0a-4fe4-b66c-420497bbfd01" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/client/src/Pages/EmployeeForm/EmployeeForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/client/src/Pages/EmployeeForm/EmployeeForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/client/src/Pages/EmployeeForm/EmployeeForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/client/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/client/vite.config.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,18 +55,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/amali/Desktop/app",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "d2a57dc1d883fd21fb9951699df71cc7"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/amali/Desktop/app&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;d2a57dc1d883fd21fb9951699df71cc7&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\amali\\Desktop\\app\\app\\src\\main\\client\\node_modules\\typescript\\lib&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Spring Boot.AppApplication">
     <configuration name="AppApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.doubletex.app.AppApplication" />
@@ -113,10 +124,22 @@
       <workItem from="1649932738274" duration="1050000" />
       <workItem from="1649934716149" duration="347000" />
       <workItem from="1649936888017" duration="2991000" />
+      <workItem from="1652955892758" duration="3512000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

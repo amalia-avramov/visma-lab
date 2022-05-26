@@ -1,6 +1,7 @@
 import {TextField,Button} from "@mui/material";
 import {useState} from "react";
 import {blankEmployee, Employee, EmployeeError} from "./EmployeeForm.types";
+import './EmployeeForm.css'
 
 export type EmployeeFormProps = {
     employee: Employee,
@@ -13,9 +14,10 @@ export function EmployeeForm(props: EmployeeFormProps){
 
 
     return (
-        <form autoComplete={'off'}>
+        <form autoComplete={'off'} className={"employee-form__form"}>
+            <h2>Employee</h2>
             <TextField value={props.employee.firstName}
-                       placeholder={"First name"}
+                       label={"First name"}
                        onChange={(e)=>{
                             const newEmployee: Employee={...props.employee, firstName: e.target.value}
                             props.setEmployee(newEmployee)
@@ -25,7 +27,7 @@ export function EmployeeForm(props: EmployeeFormProps){
             />
 
             <TextField value={props.employee.lastName}
-                       placeholder={"Last name"}
+                       label={"Last name"}
                        onChange={(e)=>{
                             const newEmployee: Employee={...props.employee, lastName: e.target.value}
                             props.setEmployee(newEmployee)
@@ -33,7 +35,7 @@ export function EmployeeForm(props: EmployeeFormProps){
                        error={props.error.lastName!==undefined}
                        helperText={props.error.lastName}
             />
-            <Button onClick={(e)=>{
+            <Button variant={"contained"} onClick={(e)=>{
                 props.submit()
             }}>
                 Submit
