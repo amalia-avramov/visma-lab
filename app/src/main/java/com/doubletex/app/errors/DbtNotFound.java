@@ -1,5 +1,6 @@
 package com.doubletex.app.errors;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -10,6 +11,7 @@ import java.time.LocalDateTime;
 @Getter
 @RequiredArgsConstructor
 @ResponseStatus(HttpStatus.NOT_FOUND)
+@JsonIgnoreProperties({"suppressed","cause","stackTrace","localizedMessage"})
 public class DbtNotFound extends RuntimeException{
     private int httpCode=HttpStatus.NOT_FOUND.value();
     private Long id;
